@@ -1,0 +1,22 @@
+//Buttons 
+#buttons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 12px;
+}
+
+.addBtn,
+.addBtn2 {
+    margin: 10px;
+    width: 10rem;
+    height: 4rem;
+    font-size: large;
+    padding: 5px 0px;
+    background-color: black;
+    color: $hover_text;
+    font-family: $input_text;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.40);
+    border: 2px;
+    border-radius: 3px;
+}

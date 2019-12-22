@@ -1,0 +1,90 @@
+//Background-image
+#background {
+    height: 100vh;
+    width: 100%;
+}
+
+
+//Calculator, operators & inputs
+#profit_calc {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 8rem;
+}
+
+#operators,
+#text,
+#pris {
+    color: $hover_text;
+    font-size: large;
+    padding: 10px 20px;
+    background-color: black;
+    font-family: $input_text;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.40);
+    border: 2px;
+    border-radius: 3px;
+}
+
+#text,
+#pris {
+    width: 300px;
+}
+
+
+//Pseudo-classes for buttons & inputs
+#operators:hover,
+#text:hover,
+#pris:hover,
+.addBtn:hover {
+    background-color: $hover_text;
+    color: darkgray;
+}
+
+.addBtn2:hover {
+    background-color: red;
+    color: $hover_text;
+}
+
+#operators:focus,
+#text:focus,
+#pris:focus {
+    background-color: black;
+    color: $hover_text;
+}
+
+
+//Sketchpad with results, income & expenses
+#layout_sketchpad {
+    background-color: $profit_b_color;
+    width: 45%;
+    margin: 5% 27%;
+    border: 2px black solid;
+    font-family: $profit_b_text;
+    text-decoration-line: underline;
+    box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.8), 0 9px 30px 0 rgba(0, 0, 0, 0.8);
+}
+
+#tabeller,
+#vinstbold,
+h3 {
+    display: flex;
+    justify-content: center;
+}
+
+h3,
+#vinstbold {
+    font-size: 3rem;
+}
+
+#expenses,
+#income {
+    border-radius: 2px;
+    padding: 0% 5%;
+    font-size: 2rem;
+}
+
+#income>p,
+#expenses>p {
+    font-size: 20px;
+}

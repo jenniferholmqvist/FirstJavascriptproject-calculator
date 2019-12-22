@@ -11,29 +11,39 @@
 
 </head>
 <body>
-   
-    <div id="vinstbold">Vinst :</div>
 
-  <form>
-    <select id="operators">
-        <option value="+">+</option>
-        <option value="-">-</option>
-    </select>
+<div id="background" style="background-image: url('monochrome-surface-3377414.jpg');">
+    <div id="profit_calc">
+        <form>
+            <select id="operators">
+                <option value="+">+</option>
+                <option value="-">-</option>
+            </select>
 
-            <input type="text" name="" id="text">
-            <input type="tel" name="" id="tel">
-       
-            <button class="addBtn">Add kontaktinfo</button>
-  </form>
+            <input type="text" name="" placeholder="Produkt" id="text">
+            <input type="pris" name="" placeholder="Pris" id="pris">
 
-<div id="utgifter">
-    Utgifter:
+        </form>
+    </div>
+    <ul id="buttons">
+        <li><button class="addBtn">Lägg till</button></li>
+        <li><button class="addBtn2" onclick="empty()">Rensa</button></li>
+    </ul>
+
+
+  <div id="layout_sketchpad">
+    <h3>Vinst:</h3>
+    <div id="vinstbold"></div>
+        <div id="tabeller">
+            <div id="expenses"><h4>Utgifter:</h4></div>
+
+            <div id="income"><h4>Inkomster:</h4></div>
+        </div>
+    </div>
+  </div>
+
+  
 </div>
-
-<div id="inkomster">
-    Inkomster: 
-</div>
-
 
 </body>
 </html>

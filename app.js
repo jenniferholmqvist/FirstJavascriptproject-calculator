@@ -9,7 +9,7 @@ function List(e){
       
         const text= document.querySelector("#text").value; //Variabel som är kopplad till id: text 1
         const pris2 = document.querySelector("#pris").value; //Variabel som är kopplad till id: tel 2
-        let num = Number(pris2); //Variabeln num gör att variabeln tel2 konverteras till nummer 3
+        let num = Number(pris2); //Variabeln num gör att variabeln pris2 konverteras till nummer 3
        
         raknar.push(num) //Pushar upp värdena i num till arrayen "raknar" 4
         const div2 = document.createElement("P"); //Skapar ett element P när variabeln div2 anropas 5
@@ -28,7 +28,7 @@ function List(e){
    
     raknar.push(num2) //Pushar upp värdena i num till arrayen "raknar" 4
     const div = document.createElement("P"); //Skapar ett element P när variabeln div2 anropas 5
-    div.innerHTML= text + "    " + pris //Lägger text + tel2 i div2 inuti HTML-koden 6
+    div.innerHTML= text + "    " + pris //Lägger text + pris i div2 inuti HTML-koden 6
 
     document.getElementById("expenses").appendChild(div); //Div2 kopplas ihop med id:et inkomster 7
 
@@ -40,10 +40,10 @@ function List(e){
     document.querySelector("#vinstbold").textContent = totalt //totalt kommer sen att synas på #vinstbold
 }
 
-const addBtn = document.querySelector(".addBtn")
-addBtn.addEventListener("click", List );
+const addBtn = document.querySelector(".addBtn") //knapp för "lägg till"
+addBtn.addEventListener("click", List ); //Lägger till på kommandot "klicka"
 
-function empty() {
+function empty() { //funktio för att den ska nollställa array samt ladda om sidan
     raknar.length = 0;
     location.reload();
 }

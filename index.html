@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Count your profit!</title>
 
     <link rel="stylesheet" href="./public/dist/style.css">
     <script src="app.js" defer></script>
@@ -12,7 +12,10 @@
 </head>
 <body>
 
+<!--Background-->
 <div id="background" style="background-image: url('monochrome-surface-3377414.jpg');">
+
+<!--Form-->
     <div id="profit_calc">
         <form>
             <select id="operators">
@@ -25,18 +28,20 @@
 
         </form>
     </div>
+
+<!--Buttons-->
     <ul id="buttons">
         <li><button class="addBtn">Lägg till</button></li>
         <li><button class="addBtn2" onclick="empty()">Rensa</button></li>
     </ul>
 
+<!--Sketchpad with profit-->
 
   <div id="layout_sketchpad">
     <h3>Vinst:</h3>
     <div id="vinstbold"></div>
         <div id="tabeller">
             <div id="expenses"><h4>Utgifter:</h4></div>
-
             <div id="income"><h4>Inkomster:</h4></div>
         </div>
     </div>
